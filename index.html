@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="display">
+            <input type="text" id="result" disabled>
+        </div>
+        <button class="btn" onclick="ClearDisplay()">C</button>
+        <button class="btn" onclick="DeleteLast()">DEL</button>
+        <button class="btn operator" onclick='InsertSymbol("/")'>/</button>
+        <button class="btn operator" onclick='InsertSymbol("x")'>X</button>
+        <button class="btn" onclick='InsertNumber("7")'>7</button>
+        <button class="btn" onclick='InsertNumber("8")'>8</button>
+        <button class="btn" onclick='InsertNumber("9")'>9</button>
+        <button class="btn operator" onclick='InsertSymbol("-")'>-</button>
+        <button class="btn" onclick='InsertNumber("4")'>4</button>
+        <button class="btn" onclick='InsertNumber("5")'>5</button>
+        <button class="btn" onclick='InsertNumber("6")'>6</button>
+        <button class="btn operator" onclick='InsertSymbol("+")'>+</button>
+        <button class="btn" onclick='InsertNumber("1")'>1</button>
+        <button class="btn" onclick='InsertNumber("2")'>2</button>
+        <button class="btn" onclick='InsertNumber("3")'>3</button>
+        <button class="btn equals" onclick='Calculate()'>=</button>
+        <span id="bottom-text">Calculator</span>
+        <!-- <button class="btn"></button> -->
+    </div>       
+    <script src="index.js"></script>
+</body>
+</html>
